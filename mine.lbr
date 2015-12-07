@@ -187,8 +187,8 @@
 <wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.2032" layer="21"/>
 <pad name="1" x="-1.27" y="0" drill="0.7" diameter="1.651"/>
 <pad name="2" x="1.27" y="0" drill="0.7" diameter="1.651"/>
-<text x="-2.032" y="-2.54" size="1.27" layer="25" ratio="15">&gt;NAME</text>
-<text x="-2.286" y="1.651" size="1.27" layer="27" ratio="15">&gt;VALUE</text>
+<text x="-2.032" y="1.27" size="1.27" layer="25" ratio="15">&gt;NAME</text>
+<text x="-1.651" y="-2.794" size="1.27" layer="27" ratio="15">&gt;VALUE</text>
 </package>
 <package name="SLEEPYHAMMER">
 <wire x1="5.739515625" y1="0.719065625" x2="4.86181875" y2="0.0447625" width="1.249075" layer="21"/>
