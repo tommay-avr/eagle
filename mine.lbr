@@ -1555,7 +1555,7 @@ No illumination</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MOSFET-NCHANNEL" prefix="T" uservalue="yes">
+<deviceset name="MOSFET-NCHANNEL" prefix="Q" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="MOSFET-NCHANNEL" x="0" y="0"/>
 </gates>
