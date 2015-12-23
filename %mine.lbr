@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1179,28 +1179,38 @@ No illumination</description>
 <pin name="PB4(ADC2)" x="12.7" y="-2.54" length="short" rot="R180"/>
 </symbol>
 <symbol name="SWITCH-SPST">
-<wire x1="-1.27" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.6256" y2="0" width="0.1524" layer="94"/>
-<circle x="1.27" y="0" radius="0.3592" width="0.2032" layer="94"/>
-<circle x="-1.27" y="0" radius="0.3592" width="0.2032" layer="94"/>
+<wire x1="-3.302" y1="0" x2="1.524" y2="1.524" width="0.254" layer="94"/>
+<circle x="2.54" y="0" radius="0.3592" width="0.2032" layer="94"/>
+<circle x="-3.302" y="0" radius="0.3592" width="0.2032" layer="94"/>
 <text x="-5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="P" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="P" x="-5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
 <pin name="O" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<polygon width="0.1524" layer="94">
+<vertex x="2.159" y="1.778"/>
+<vertex x="0.5842" y="1.651"/>
+<vertex x="0.8636" y="0.7874"/>
+</polygon>
+<wire x1="-5.08" y1="0" x2="-3.302" y2="0" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="SWITCH-SPDT">
-<wire x1="0" y1="0" x2="2.54" y2="1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="3.175" y2="-2.54" width="0.127" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="3.175" y2="2.54" width="0.1524" layer="94"/>
-<circle x="2.54" y="2.54" radius="0.3592" width="0.2032" layer="94"/>
-<circle x="2.54" y="-2.54" radius="0.3592" width="0.2032" layer="94"/>
-<circle x="0" y="0" radius="0.3592" width="0.2032" layer="94"/>
-<text x="-1.905" y="-6.35" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="POLE" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<pin name="DOWN" x="5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="UP" x="5.08" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<circle x="1.27" y="2.54" radius="0.3592" width="0.2032" layer="94"/>
+<circle x="1.27" y="-2.54" radius="0.3592" width="0.2032" layer="94"/>
+<circle x="-3.81" y="0" radius="0.3592" width="0.2032" layer="94"/>
+<text x="-4.445" y="-6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="POLE" x="-5.08" y="0" visible="off" length="point" direction="pas"/>
+<pin name="DOWN" x="2.54" y="-2.54" visible="off" length="point" direction="pas" rot="R180"/>
+<pin name="UP" x="2.54" y="2.54" visible="off" length="point" direction="pas" rot="R180"/>
+<wire x1="-5.08" y1="0" x2="-3.81" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="1.27" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="0" x2="1.27" y2="2.54" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="1.27" y="2.54"/>
+<vertex x="0" y="2.286"/>
+<vertex x="0.3556" y="1.6256"/>
+</polygon>
 </symbol>
 <symbol name="MC33883">
 <pin name="CP_OUT" x="20.32" y="25.4" length="middle" rot="R180"/>
