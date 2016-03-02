@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -187,8 +187,8 @@
 </package>
 <package name="CAP-PTH-SMALL">
 <wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.2032" layer="21"/>
-<pad name="1" x="-1.27" y="0" drill="0.7" diameter="1.905"/>
-<pad name="2" x="1.27" y="0" drill="0.7" diameter="1.905"/>
+<pad name="1" x="-1.27" y="0" drill="0.8" diameter="1.905"/>
+<pad name="2" x="1.27" y="0" drill="0.8" diameter="1.905"/>
 <text x="-2.032" y="1.27" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.651" y="-2.794" size="1.27" layer="27">&gt;VALUE</text>
 </package>
@@ -333,11 +333,11 @@ Mouser 633-A11JV1</description>
 </package>
 <package name="SWITCH-SPDT-VERTICAL-NKK-45">
 <description>NKK Series M</description>
-<pad name="POLE" x="0" y="6.35" drill="0.8" diameter="1.905"/>
-<pad name="DOWN" x="0" y="8.89" drill="0.8" diameter="1.905"/>
-<pad name="UP" x="0" y="3.81" drill="0.8" diameter="1.905"/>
-<pad name="NC1" x="2.54" y="-8.89" drill="0.9" diameter="1.905"/>
-<pad name="NC2" x="-2.54" y="-8.89" drill="0.9" diameter="1.905"/>
+<pad name="POLE" x="0" y="6.35" drill="1.8" diameter="2" shape="long"/>
+<pad name="DOWN" x="0" y="8.89" drill="1.8" diameter="2" shape="long" rot="R180"/>
+<pad name="UP" x="0" y="3.81" drill="1.8" diameter="2" shape="long" rot="R180"/>
+<pad name="NC1" x="2.54" y="-8.89" drill="1.8" diameter="2" shape="long"/>
+<pad name="NC2" x="-2.54" y="-8.89" drill="1.8" diameter="2" shape="long"/>
 <wire x1="3.937" y1="-9.9822" x2="-3.937" y2="-9.9822" width="0.2032" layer="21"/>
 <wire x1="-3.937" y1="-9.9822" x2="-3.937" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="-3.937" y1="1.27" x2="-1.27" y2="1.27" width="0.2032" layer="21"/>
@@ -347,6 +347,36 @@ Mouser 633-A11JV1</description>
 <wire x1="1.27" y1="1.27" x2="3.937" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="3.937" y1="1.27" x2="3.937" y2="-9.9822" width="0.2032" layer="21"/>
 <text x="-3.302" y="-0.762" size="1.27" layer="25">&gt;NAME</text>
+<polygon width="1.524" layer="16">
+<vertex x="-1.8288" y="3.2512"/>
+<vertex x="1.8288" y="3.2512"/>
+<vertex x="1.8288" y="3.9878"/>
+<vertex x="-1.8288" y="3.9878"/>
+</polygon>
+<polygon width="1.524" layer="16">
+<vertex x="-1.8288" y="8.7122"/>
+<vertex x="1.8288" y="8.7122"/>
+<vertex x="1.8288" y="9.4488"/>
+<vertex x="-1.8288" y="9.4488"/>
+</polygon>
+<polygon width="1.524" layer="16">
+<vertex x="-1.8288" y="6.1722"/>
+<vertex x="1.8288" y="6.1722"/>
+<vertex x="1.8288" y="6.5278"/>
+<vertex x="-1.8288" y="6.5278"/>
+</polygon>
+<polygon width="1.524" layer="16">
+<vertex x="-5.08" y="-9.3472"/>
+<vertex x="-1.27" y="-9.3472"/>
+<vertex x="-1.27" y="-7.62"/>
+<vertex x="-5.08" y="-7.62"/>
+</polygon>
+<polygon width="1.524" layer="16">
+<vertex x="5.08" y="-9.3472"/>
+<vertex x="1.27" y="-9.3472"/>
+<vertex x="1.27" y="-7.62"/>
+<vertex x="5.08" y="-7.62"/>
+</polygon>
 </package>
 <package name="SO-20W">
 <description>&lt;B&gt;Small Outline Wide Plastic Gull Wing&lt;/B&gt;&lt;p&gt;
